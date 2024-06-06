@@ -1,0 +1,101 @@
+.landing-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #222222;
+  /* Dark background color */
+  color: #ffffff;
+  /* Text color for dark mode */
+}
+
+.landing-page-title {
+  font-size: 3rem;
+  /* Reduced font size */
+  margin-bottom: 10px;
+  /* Margin bottom */
+  color: #dddddd;
+  /* Heading color */
+  text-align: center;
+  /* Center align title */
+}
+
+.landing-page-form {
+  text-align: center;
+  margin-top: 20px;
+  /* Increased margin from the title */
+}
+
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  /* Center buttons horizontally */
+  justify-content: center;
+  /* Center buttons horizontally */
+}
+
+input[type="text"],
+button {
+  padding: 12px 20px;
+  /* Increased padding */
+  margin: 10px;
+  /* Increased margin */
+  border: none;
+  border-radius: 8px;
+  /* Rounded corners */
+  outline: none;
+  font-size: 1.2rem;
+  /* Increased font size */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#name-input {
+  width: 350px;
+  color: #222222;
+}
+
+#room-input {
+  width: 188px;
+  color: #222222;
+}
+
+button {
+  background-color: #007bff;
+  /* Blue button color */
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  /* Adjusted box shadow for dark mode */
+}
+
+button:hover {
+  background-color: #0056b3;
+  /* Darker blue on hover */
+  transform: scale(1.05);
+  /* Increased size on hover */
+}
+
+.room-status,
+.room-input {
+  margin-top: 20px;
+}
+
+.gamevo-logo {
+  width: 150px;
+  transition: transform 0.3s ease;
+}
+
+.gamevo-logo:hover {
+  transform: scale(1.1);
+}
+
+.room-input {
+  position: relative;
+}
+
+#code-input {
+  width: 350px;
+  background-color: #6b6d6e;
+  color: #ffffff;
+}

@@ -1,0 +1,148 @@
+/* styles.css */
+.chat-page {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #1a1a1a, #333333);
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    /* Text color for the dark theme */
+}
+
+.tic-tac-toe-board {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #262626;
+    /* Darker background color for the Tic Tac Toe board */
+    margin-right: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    /* Adjusted box shadow for the dark theme */
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 300px;
+    background-color: #333333;
+    /* Dark background color for the chat container */
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    /* Adjusted box shadow for the dark theme */
+}
+
+.chat-container h1 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #ffffff;
+    /* Header text color for the dark theme */
+}
+
+#othertyping {
+    color: #cccccc;
+    /* Typing indicator color for the dark theme */
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #ffffff;
+    /* Text color for the dark theme */
+}
+
+.messages span {
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    /* Align items vertically */
+}
+
+form input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #666666;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #444444;
+    color: #ffffff;
+    transition: border 0.3s ease;
+    margin-right: 10px;
+    /* Add margin between input and send button */
+}
+
+form input:focus {
+    border-color: #ffffff;
+    /* Border color on focus for input fields */
+    outline: none;
+}
+
+form button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+input[type="text"] {
+    width: 100%;
+    color: #ffffff;
+}
+
+img {
+    width: 25px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+    /* Button background color on hover */
+    transform: scale(1.05);
+}
+
+button {
+    background-color: #3265e8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+button:hover {
+    background-color: #274bb5;
+    /* Button background color on hover */
+    transform: scale(1.05);
+}
+
+
+.floating-button svg {
+    font-size: 30px;
+    /* Adjust as needed */
+}
+
+.floating-button:hover {
+    transform: scale(1.1);
+}
+
+.floating-button:active {
+    background-color: #777;
+}

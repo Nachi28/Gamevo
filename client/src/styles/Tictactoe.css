@@ -1,0 +1,134 @@
+/* General styles for the Tic Tac Toe game */
+.tic-tac-toe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    /* Text color for dark mode */
+}
+
+.tic-tac-toe h1 {
+    margin-top: 16px;
+    font-size: 4rem;
+    margin-bottom: 16px;
+    color: #dddddd;
+    /* Heading color */
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #333;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #333333;
+    /* Dark background color for the board */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    /* Adjusted box shadow for dark mode */
+}
+
+.row {
+    display: flex;
+}
+
+.square {
+    width: 120px;
+    height: 120px;
+    background-color: #555555;
+    /* Dark background color for squares */
+    border: 2px solid #333;
+    font-size: 4rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.square:hover {
+    background-color: #777777;
+    /* Darker background color on hover */
+    transform: scale(1.05);
+}
+
+.square:disabled {
+    cursor: not-allowed;
+}
+
+.info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.info p {
+    font-size: 2rem;
+    margin-top: 0px;
+    margin-bottom: 8px;
+    color: #cccccc;
+    /* Info text color */
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #007bff;
+    /* Button background color */
+    color: #ffffff;
+    /* Button text color */
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    /* Adjusted box shadow for dark mode */
+}
+
+button:hover {
+    background-color: #0056b3;
+    /* Button background color on hover */
+    transform: scale(1.05);
+}
+
+button:disabled {
+    background-color: #666666;
+    /* Disabled button background color */
+    cursor: not-allowed;
+}
+
+.board.locked {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+/* Additional animations and effects */
+@keyframes winnerHighlight {
+    0% {
+        background-color: #ffff66;
+    }
+
+    100% {
+        background-color: #ffcc00;
+    }
+}
+
+.square.winner {
+    animation: winnerHighlight 1s infinite alternate;
+}
+
+@keyframes tieHighlight {
+    0% {
+        background-color: #cccccc;
+    }
+
+    100% {
+        background-color: #999999;
+    }
+}
+
+.square.tie {
+    animation: tieHighlight 1s infinite alternate;
+}
