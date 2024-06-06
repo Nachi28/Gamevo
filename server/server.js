@@ -3,7 +3,7 @@ const { createServer } = require("http");
 const { Server } = require("socket.io");
 const app = express();
 const httpServer = createServer(app);
-const io = new Server(httpServer, { cors: { origin: "http://localhost:3000" } });
+const io = new Server(httpServer, { cors: { origin: "https://gamevo.onrender.com" } });
 app.use(express.json());
 
 const rooms = new Map();
