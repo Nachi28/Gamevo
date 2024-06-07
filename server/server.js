@@ -8,6 +8,11 @@ app.use(express.json());
 
 const rooms = new Map();
 
+// Mock API created for cron-job(server sleep prevention)
+app.get("/mockAPI", (req, res) => {
+  res.status(200).json({ msg: 'Mock API data fetched successfully' });
+});
+
 io.on("connection", (socket) => {
   console.log("socket.id: " + socket.id);
 
